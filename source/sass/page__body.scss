@@ -1,0 +1,16 @@
+@use "list.scss";
+@use "visually-hidden.scss";
+@use "link.scss";
+
+.page__body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'PT-sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
