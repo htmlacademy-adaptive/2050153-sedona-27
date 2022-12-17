@@ -1,0 +1,20 @@
+.toggle-buttons {
+  display: none;
+}
+
+.toggle-buttons+.toggle-buttons__toggle-current {
+  display: block;
+}
+
+.toggle-buttons__toggle {
+  background-repeat: no-repeat;
+  background-position: top 17px, left auto;
+}
+
+.toggle-buttons__toggle-open {
+  background-image: url(/source/img/icon-nav-menu-open.svg);
+}
+
+.toggle-buttons__toggle-close {
+  background-image: url(/source/img/icon-nav-menu-close.svg);
+}

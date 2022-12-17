@@ -1,3 +1,8 @@
+@use "/source/sass/header/header__logo.scss";
+@use "/source/sass/header/header-nav.scss"
+
 .header {
   min-height: 56px;
+  min-width: 320px;
+  position: relative;
 }
