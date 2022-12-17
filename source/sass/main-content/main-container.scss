@@ -1,3 +1,8 @@
+@use "/source/sass/main-content/hero/hero.scss";
+@use "/source/sass/main-content/advantages/advantages.scss";
+@use "/source/sass/main-content/search-form-link/search-form-link.scss";
+@use "/source/sass/main-content/main-map/main-map.scss";
+
 .main-container {
   display: flex;
   flex-direction: column;
