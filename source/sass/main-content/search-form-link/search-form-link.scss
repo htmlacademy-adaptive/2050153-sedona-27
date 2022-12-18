@@ -1,0 +1,8 @@
+@use "/source/sass/main-content/search-form-link/search-form-link__title.scss";
+@use "/source/sass/main-content/search-form-link/search-form-link__wrapper.scss";
+@use "/source/sass/main-content/search-form-link/search-form-link__instruction.scss";
+@use "/source/sass/main-content/search-form-link/search-form-link__button.scss";
+
+.search-form-link {
+  display: flex;
+}
