@@ -1,0 +1,8 @@
+@use "/source/sass/main-content/main-map/map__image.scss";
+
+.map {
+  display: flex;
+  background-image: url(/source/img/map-marker.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
