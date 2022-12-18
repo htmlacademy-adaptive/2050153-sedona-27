@@ -1,0 +1,23 @@
+@use "/source/sass/main-content/advantages/advantages-reasons__title.scss";
+@use "/source/sass/main-content/advantages/advantages-reasons__description.scss";
+
+.advantages-reasons__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 47px;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-position: top 0, left 0;
+}
+
+.advantages-reasons__item--house {
+  background-image: url(/source/img/advantages-icons/house.svg);
+}
+
+.advantages-reasons__item--food {
+  background-image: url(/source/img/advantages-icons/food.svg);
+}
+
+.advantages-reasons__item--present {
+  background-image: url(/source/img/advantages-icons/present.svg);
+}
