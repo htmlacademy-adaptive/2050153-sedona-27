@@ -1,0 +1,21 @@
+
+.nav {
+  min-width: 320px;
+}
+
+.nav__toggle {
+  margin-top: 17px;
+  margin-right: 17px;
+}
+
+.nav__wrapper {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 768px;
+}
+

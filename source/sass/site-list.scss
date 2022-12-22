@@ -1,0 +1,23 @@
+
+.site__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 320px;
+}
+
+.site-list__item {
+  display: flex;
+}
+
+.site-list__link {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.site-list__link--current {
+  color: #766357;
+}
+

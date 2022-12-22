@@ -1,0 +1,17 @@
+
+.header {
+  min-height: 56px;
+  min-width: 320px;
+  position: relative;
+}
+
+.header__logo {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+}
+
+.header__nav {
+  display: flex;
+}
