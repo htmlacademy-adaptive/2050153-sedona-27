@@ -1,5 +1,12 @@
-@use "/source/sass/main-content/advantages/advantages-reasons__title.scss";
-@use "/source/sass/main-content/advantages/advantages-reasons__description.scss";
+@use "/source/sass/main-content/advantages/advantages-reasons__list.scss";
+
+.advantages-reasons {
+}
+
+.advantages-reasons__list {
+  grid-column: 284px;
+  column-gap: 25px;
+}
 
 .advantages-reasons__item {
   display: flex;

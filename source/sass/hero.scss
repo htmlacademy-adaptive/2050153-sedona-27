@@ -1,0 +1,27 @@
+@use "/source/sass/main-content/hero/hero__wrapper.scss";
+
+.hero {
+  display: flex;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__background {
+  background-image: url(/source/img/hero-index-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero__vector {
+  margin: 90px 19px 85px;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+}
+
+

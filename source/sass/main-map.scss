@@ -1,0 +1,15 @@
+@use "/source/sass/main-content/main-map/main-map__wrapper.scss";
+
+.main-map {
+  display: flex;
+}
+
+.main-map__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-map__link {
+  display: flex;
+  width: 320px;
+}

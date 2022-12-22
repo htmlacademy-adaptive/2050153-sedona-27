@@ -1,0 +1,17 @@
+@use "/source/sass/main-content/advantages/advantages-with-numbers__list.scss";
+
+.advantages-with-numbers {
+  display: flex;
+}
+
+.advantages-with-numbers__list {
+  display: grid;
+  grid-column: 268px;
+  column-gap: 50px;
+}
+
+.advantages-with-numbers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
