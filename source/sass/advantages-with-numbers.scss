@@ -1,17 +1,27 @@
-@use "/source/sass/main-content/advantages/advantages-with-numbers__list.scss";
+@use "./mixins.scss";
 
 .advantages-with-numbers {
   display: flex;
 }
 
 .advantages-with-numbers__list {
+  @include mixins.reset-list;
   display: grid;
   grid-column: 268px;
   column-gap: 50px;
+  margin: 0 18px;
 }
 
 .advantages-with-numbers__item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .advantages__title {
+    margin-top: 24px;
+    margin-bottom: 20px;
+  }
+  .advantages__description {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
 }

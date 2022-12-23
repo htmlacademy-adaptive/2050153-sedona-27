@@ -1,7 +1,8 @@
 
 .map {
   display: flex;
-  background-image: url(/source/img/map-marker.svg);
+  background-image: url(../img/map-marker.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 center;
+  max-width: 320px;
 }

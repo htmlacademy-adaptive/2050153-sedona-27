@@ -1,20 +1,28 @@
 .toggle-buttons {
-  display: none;
-}
-
-.toggle-buttons+.toggle-buttons__toggle-current {
-  display: block;
+  display: flex;
+  margin: 17px 0 17px auto;
 }
 
 .toggle-buttons__toggle {
+  display: none;
+}
+
+.toggle-buttons__toggle-current {
+  display: block;
   background-repeat: no-repeat;
-  background-position: top 17px, left auto;
+  border: none;
+  background-color: inherit;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .toggle-buttons__toggle-open {
-  background-image: url(/source/img/icon-nav-menu-open.svg);
+  background-image: url(../img/icon-nav-menu-open.svg);
+  background-position: 0 0;
 }
 
 .toggle-buttons__toggle-close {
-  background-image: url(/source/img/icon-nav-menu-close.svg);
+  background-image: url(../img/icon-nav-menu-close.svg);
 }

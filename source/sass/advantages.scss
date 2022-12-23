@@ -1,3 +1,4 @@
+@use "./mixins.scss";
 
 .advantages {
   display: flex;
@@ -5,10 +6,13 @@
 
 .advantages__wrapper {
   display: flex;
+  max-width: 320px;
 }
 
 .advantages__list {
+  @include mixins.reset-list;
   display: grid;
+  align-items: center;
 }
 
 .advantages__item {
@@ -17,9 +21,21 @@
   min-width: 284px;
 }
 
+.advantages__item:first-child {
+  .advantages__title {
+    padding-top: 63px;
+  }
+}
+
 .advantages__item--with-image {
-  color: #FFFFFF;
   background-color: #81B3D2;
+  color: #FFFFFF;
+  .advantages__title {
+    padding-top: 40px;
+  }
+  .advantages__description {
+    padding-bottom: 40px;
+  }
 }
 
 .advantages__item--with-numbers {
@@ -29,6 +45,8 @@
 
 .advantages__item--reasons {
   display: grid;
+  grid-template-columns: 284px;
+  margin: 22px;
 }
 
 .advantages__title {
@@ -37,6 +55,8 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 22px;
   width: 284px;
 }
 
@@ -52,4 +72,5 @@
 .advantages__description {
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }

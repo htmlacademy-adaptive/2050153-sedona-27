@@ -1,11 +1,15 @@
+@use "./mixins.scss";
+
 .footer-social {
   display: flex;
   align-items: center;
   text-align: center;
   width: 156px;
+  margin-top: 34px;
 }
 
 .footer-social__list {
+  @include mixins.reset-list;
   display: grid;
   grid-template-columns: repeat(3, 48px);
   column-gap: 6px;
@@ -16,16 +20,14 @@
 
 .footer-social__item {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  background-color: #81B3D2;
 }
 
 .footer-social__button {
-  width: 24px;
-  height: 24px;
+  @include mixins.reset-list;
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
 }
 
 .footer-social__button--vk {
@@ -40,6 +42,28 @@
 
 }
 
-.footer__copyright {
-
+.footer-social__icon {
+  color: #FFFFFF;
+  margin-top: 16px;
 }
+
+.footer-social__button:hover {
+  background-color: #669EC0;
+}
+
+.footer-social__button:active {
+  background-color: #5496BD;
+  .footer-social__icon {
+    color: rgb(255, 255, 255, 0.3);
+  }
+}
+
+.footer-social__button:focus-visible {
+  outline: 2px solid #2D3440;
+  background-color: #5496BD;
+}
+
+.footer-social__button:invalid {
+  background-color: #E5E5E5;
+}
+

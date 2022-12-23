@@ -1,6 +1,8 @@
+@use "./mixins.scss";
 
 .site__list {
-  display: flex;
+  display: none;
+  @include mixins.reset-list;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -8,13 +10,20 @@
 }
 
 .site-list__item {
-  display: flex;
+  display: none;
+  min-height: 55px;
+  box-sizing: border-box;
+  background-color: #81B3D2;
+  color: #FFFFFF;
 }
 
 .site-list__link {
+  @include mixins.reset-link;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 81px;
 }
 
 .site-list__link--current {

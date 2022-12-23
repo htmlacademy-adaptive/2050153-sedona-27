@@ -1,30 +1,43 @@
-@use "/source/sass/main-content/advantages/advantages-reasons__list.scss";
+@use "./mixins.scss";
 
 .advantages-reasons {
 }
 
 .advantages-reasons__list {
+  @include mixins.reset-list;
+  display: grid;
   grid-column: 284px;
-  column-gap: 25px;
+  row-gap: 25px;
 }
 
 .advantages-reasons__item {
   display: flex;
+  box-sizing: border-box;
+  width: 284px;
   flex-direction: column;
   padding-left: 47px;
   align-items: flex-start;
   background-repeat: no-repeat;
-  background-position: top 0, left 0;
+  background-position: top 0 left 0;
 }
 
 .advantages-reasons__item--house {
-  background-image: url(/source/img/advantages-icons/house.svg);
+  background-image: url(../img/advantages-icons/house.svg);
 }
 
 .advantages-reasons__item--food {
-  background-image: url(/source/img/advantages-icons/food.svg);
+  background-image: url(../img/advantages-icons/food.svg);
 }
 
 .advantages-reasons__item--present {
-  background-image: url(/source/img/advantages-icons/present.svg);
+  background-image: url(../img/advantages-icons/present.svg);
+}
+
+.advantages-reasons__title,
+.advantages-reasons__description {
+  text-align: left;
+}
+
+.advantages-reasons__title {
+  padding-top: 8px;
 }

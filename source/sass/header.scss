@@ -1,15 +1,20 @@
+@use "./mixins.scss";
+$margin-logo: 160px - 93px;
 
 .header {
   min-height: 56px;
-  min-width: 320px;
+  max-width: 320px;
   position: relative;
 }
 
 .header__logo {
+  @include mixins.reset-link;
+  box-sizing: border-box;
   z-index: 1;
   position: absolute;
-  left: 50%;
   top: 0;
+  margin: 0 $margin-logo;
+  max-width: 320px;
 }
 
 .header__nav {

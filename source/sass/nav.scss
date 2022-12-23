@@ -1,18 +1,27 @@
+@use "./mixins.scss";
 
 .nav {
   min-width: 320px;
+  min-height: 56px;
+  position: relative;
 }
 
 .nav__toggle {
   margin-top: 17px;
   margin-right: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
 }
 
 .nav__wrapper {
   display: flex;
+  max-width: 320px;
 }
 
 .nav__list {
+  @include mixins.reset-list;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
