@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
-  <header class="catalog-header header">
+<body class="page__body body">
+  <header class="body__catalog-header header">
     <a class="header__logo logo">
       <img class="logo__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="header-nav nav">
+    <nav class="header__nav nav">
       <div class="nav__toggle toggle-buttons">
         <button class="toggle-buttons__toggle toggle-buttons__toggle-open toggle-buttons__toggle-current" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -22,24 +22,24 @@
         </button>
       </div>
       <div class="nav__wrapper">
-        <ul class="nav__list site-list list">
-          <li class="nav-list__item">
-            <a class="nav-list__link link" href="index.html">
+        <ul class="nav__list site-list nav-list">
+          <li class="site-list__item nav-list__item">
+            <a class="site-list__link nav-list__link" href="index.html">
               Главная
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-list__link--current link">
+          <li class="site-list__item nav-list__item">
+            <a class="site-list__link nav-list__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link link" href="form.html">
+          <li class="site-list__item nav-list__item">
+            <a class="site-list__link nav-list__link nav-list__link--current">
               Форма отзыва
             </a>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link link" href="https://htmlacademy.ru/">
+          <li class="site-list__item nav-list__item">
+            <a class="site-list__link nav-list__link" href="https://htmlacademy.ru/">
               HTML Academy
             </a>
           </li>
@@ -47,23 +47,23 @@
       </div>
     </nav>
   </header>
-  <main class="catalog-container container">
-    <section class="catalog-hero hero">
-      <div class="hero__wrapper">
-        <h1 class="visually-hidden">Добро пожаловать на страницу Фото и Видео</h1>
-        <div class="hero__background">
-          <img class="hero__vector" src="img/text-sedona-mobile-size.svg" width="229" height="39" alt="Welcome to Sedona">
+  <main class="body__main-catalog catalog">
+    <section class="catalog__hero hero hero-catalog">
+      <div class="hero__wrapper hero-catalog__wrapper">
+        <h1 class="visually-hidden">Добро пожаловать на страницу для заполнения формы Отзыва</h1>
+        <div class="hero__background hero-catalog__background">
+          <img class="hero__vector hero-form__vector" src="./img/text-sedona.svg" width="229" height="39" alt="Sedona">
         </div>
-        <div class="hero__text hero-text">
-          <h2 class="hero-text__about-sedona">Фото и видео</h2>
-          <p class="hero-text__advantages">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="hero__text hero-catalog__text hero-text">
+          <h2 class="hero-text__title">Фото и видео</h2>
+          <p class="hero-text__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </div>
     </section>
-    <section class="photos-catalog">
+    <section class="catalog__photos photos-catalog">
       <div class="photos-catalog__wrapper">
         <h2 class="visually-hidden">Фотографии о Седоне</h2>
-        <ul class="photos-catalog__list list">
+        <ul class="photos-catalog__list">
           <li class="photos-catalog__item photos-catalog__item--road">
             <h3 class="photos-catalog__title">неродные просторы</h3>
             <img class="photos-catalog__image" src="img/photo-road.jpg" width="1200" height="400" alt="Фотография Народные просторы.">
@@ -91,7 +91,7 @@
         </ul>
       </div>
     </section>
-    <section class="video-catalog">
+    <section class="catalog__video video-catalog">
       <div class="video-catalog__wrapper">
         <h2 class="visually-hidden">Видео о Седоне</h2>
         <h3 class="video-catalog__title">Все еще сомневаетесь?</h3>
