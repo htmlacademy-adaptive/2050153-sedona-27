@@ -7,18 +7,22 @@
   display: flex;
   flex-direction: column;
   max-width: 320px;
-  min-height: 389px;
 }
 
 .hero__background {
   background-image: url(../img/hero-index-background.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 389px;
+  background-position: center top;
+  background-size: cover;
+  width: 320px;
+  height: 389px;
 }
 
 .hero__vector {
-  margin: 90px 19px 85px;
+  padding: 70px 19px 105px;
+  background-image: url(../img/hero-divider.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .hero__text {

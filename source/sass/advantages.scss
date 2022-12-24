@@ -13,15 +13,21 @@
   @include mixins.reset-list;
   display: grid;
   align-items: center;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .advantages__item {
   display: flex;
   flex-direction: column;
-  min-width: 284px;
+  align-items: center;
+  width: 320px;
 }
 
 .advantages__item:first-child {
+  background-image: url(../img/hero-advantages-divider.svg);
+  background-repeat: no-repeat;
+  background-position: top;
   .advantages__title {
     padding-top: 63px;
   }
@@ -30,6 +36,7 @@
 .advantages__item--with-image {
   background-color: #81B3D2;
   color: #FFFFFF;
+  overflow:hidden;
   .advantages__title {
     padding-top: 40px;
   }
@@ -45,8 +52,8 @@
 
 .advantages__item--reasons {
   display: grid;
-  grid-template-columns: 284px;
-  margin: 22px;
+  box-sizing: border-box;
+  width: 320px;
 }
 
 .advantages__title {
@@ -63,14 +70,19 @@
 .advantages__number {
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .advantages__image {
   display: flex;
+  width: 320px;
+  height: 260px;
+  object-fit: cover;
 }
 
 .advantages__description {
   text-align: center;
   text-transform: uppercase;
+  width: 284px;
   margin: 0;
 }

@@ -21,7 +21,10 @@
     margin-bottom: 20px;
   }
   .advantages__description {
-    margin-top: 20px;
     margin-bottom: 24px;
   }
+}
+
+.advantages-with-numbers__item:not(:last-child) {
+  border-bottom: 1px solid #D6D6D6;
 }

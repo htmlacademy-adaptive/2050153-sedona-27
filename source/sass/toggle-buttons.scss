@@ -26,3 +26,22 @@
 .toggle-buttons__toggle-close {
   background-image: url(../img/icon-nav-menu-close.svg);
 }
+
+.toggle-buttons__toggle:hover {
+  opacity: 0.6;
+}
+
+.toggle-buttons__toggle:active {
+  opacity: 0.3;
+}
+
+.toggle-buttons__toggle:focus-visible {
+  border: none;
+  outline: 2px solid rgb(181, 181, 181);
+  outline-offset: 2px;
+  background-color: transparent;
+}
+
+.toggle-buttons__toggle:invalid {
+  opacity: 0.1;
+}

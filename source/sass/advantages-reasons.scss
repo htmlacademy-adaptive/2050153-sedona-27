@@ -6,8 +6,9 @@
 .advantages-reasons__list {
   @include mixins.reset-list;
   display: grid;
-  grid-column: 284px;
+  grid-template-columns: 284px;
   row-gap: 25px;
+  margin: 22px 18px;
 }
 
 .advantages-reasons__item {
@@ -36,8 +37,13 @@
 .advantages-reasons__title,
 .advantages-reasons__description {
   text-align: left;
+  width: 237px;
 }
 
 .advantages-reasons__title {
   padding-top: 8px;
+}
+
+.advantages-reasons__description {
+
 }

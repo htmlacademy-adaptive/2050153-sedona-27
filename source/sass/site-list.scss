@@ -7,6 +7,9 @@
   flex-wrap: wrap;
   align-items: center;
   min-width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .site-list__item {
@@ -24,9 +27,5 @@
   font-size: 18px;
   line-height: 26px;
   padding: 12px 81px;
-}
-
-.site-list__link--current {
-  color: #766357;
 }
 
