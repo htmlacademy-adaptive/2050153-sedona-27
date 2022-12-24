@@ -25,6 +25,10 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  min-width: 768px;
+  justify-content: center;
+  max-width: 320p;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 

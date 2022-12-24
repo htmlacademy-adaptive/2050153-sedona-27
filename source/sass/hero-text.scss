@@ -6,16 +6,18 @@
   min-width: 284px;
 }
 
-.hero-text__advantages {
-  font-size: 14px;
+.hero-text__description {
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
-.hero-text__about-sedona {
+.hero-text__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 24px;
 }

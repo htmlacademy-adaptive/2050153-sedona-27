@@ -1,31 +1,50 @@
 @use "./mixins.scss";
 
 .site__list {
-  display: none;
   @include mixins.reset-list;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  min-width: 320px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .site-list__item {
   display: none;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 55px;
+  width: 320px;
   box-sizing: border-box;
   background-color: #81B3D2;
   color: #FFFFFF;
+  margin: 0;
+  z-index: 2;
 }
 
 .site-list__link {
   @include mixins.reset-link;
+  display: flex;
+  justify-content: center;
   text-transform: uppercase;
+  flex-grow: 1;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   padding: 12px 81px;
+}
+
+.site-list__link:hover {
+  background-color: #669EC0;
+}
+
+.site-list__link:active {
+  background-color: #5496BD;
+  color: rgb(255, 255, 255, 0.3);
+}
+
+.site-list__link:focus-visible {
+  outline: 2px solid #2D3440;
+  background-color: #5496BD;
+}
+
+.site-list__link:invalid {
+  background-color: #E5E5E5;
 }
 

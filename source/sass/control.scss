@@ -1,0 +1,107 @@
+.control {
+  cursor: pointer;
+}
+
+.control:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.control__input {
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  width: max-content;
+  min-height: 46px;
+  padding: 6px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.control__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 10px 0;
+  padding-left: 62px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.control__label--mark-radio::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+
+.control__label--mark-radio::after {
+  content: "";
+  position: absolute;
+  background-color: #333333;
+  width: 16px;
+  height: 16px;
+  left: 15px;
+  top: 15px;
+  border-radius: 50%;
+  display: none;
+}
+
+.control__label--mark-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  width: 46px;
+  height: 46px;
+  box-sizing: border-box;
+}
+
+.control__label--mark-checkbox::after {
+  content: url(../img/сheckbox-icon.svg);
+  position: absolute;
+  width: 22px;
+  height: 16px;
+  display: none;
+  left: 17px;
+  top: 11px;
+}
+
+.control__input[type="radio"]:checked+.control__label--mark-radio::after,
+.control__input[type="checkbox"]:checked+.control__label--mark-checkbox::after {
+  display: block;
+}
+
+.control__label--mark-radio:hover::before,
+.control__label--mark-checkbox:hover::before {
+  background-color: #E5E5E5;
+}
+
+.control__label--mark-radio:active::before,
+.control__label--mark-checkbox:active::before {
+  background-color: #D5D5D5;
+}
+
+.control__label--mark-radio:active::after,
+.control__label--mark-checkbox:active::after {
+  opacity: 0.3;
+}
+
+.control__input[type="checkbox"]:focus+.control__label--mark-checkbox::before {
+  background-color: #E5E5E5;
+}
+
+.control__input[type="radio"]:focus+.control__label--mark-radio::before {
+  background-color: #E5E5E5;
+}
+
+.control:disabled {
+  opacity: 0.5;
+}
