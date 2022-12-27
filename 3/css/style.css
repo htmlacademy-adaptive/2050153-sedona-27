@@ -150,11 +150,11 @@
   margin: 17px 0 17px auto;
 }
 
-.toggle-buttons__toggle {
+.toggle-buttons__button {
   display: none;
 }
 
-.toggle-buttons__toggle-current {
+.toggle-buttons__button--current {
   display: block;
   background-repeat: no-repeat;
   border: none;
@@ -165,31 +165,31 @@
   cursor: pointer;
 }
 
-.toggle-buttons__toggle-open {
+.toggle-buttons__button--open {
   background-image: url(../img/icon-nav-menu-open.svg);
   background-position: 0 0;
 }
 
-.toggle-buttons__toggle-close {
+.toggle-buttons__button--close {
   background-image: url(../img/icon-nav-menu-close.svg);
 }
 
-.toggle-buttons__toggle:hover {
+.toggle-buttons__button:hover {
   opacity: 0.6;
 }
 
-.toggle-buttons__toggle:active {
+.toggle-buttons__button:active {
   opacity: 0.3;
 }
 
-.toggle-buttons__toggle:focus-visible {
+.toggle-buttons__button:focus-visible {
   border: none;
   outline: 2px solid #b5b5b5;
   outline-offset: 2px;
   background-color: transparent;
 }
 
-.toggle-buttons__toggle:invalid {
+.toggle-buttons__button:invalid {
   opacity: 0.1;
 }
 
@@ -301,7 +301,11 @@
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
+  width: 320px;
+}
+
+.hero__wrapper--sedona {
+  border-bottom: 1px solid #E5E5E5;
 }
 
 .hero__background {
@@ -313,6 +317,10 @@
   height: 389px;
 }
 
+.hero__background--sedona {
+  height: 158px;
+}
+
 .hero__vector {
   padding: 70px 19px 105px;
   background-image: url(../img/hero-divider.svg);
@@ -320,9 +328,18 @@
   background-position: center bottom;
 }
 
+.hero__vector--sedona {
+  padding: 57px 45.5px 62px;
+}
+
 .hero__text {
   display: flex;
   flex-direction: column;
+}
+
+.hero__text--catalog,
+.hero__text--form {
+  margin: 38px 18px 26px;
 }
 
 .hero-text {
@@ -717,25 +734,6 @@
   margin: 0;
 }
 
-.hero-form {
-  width: 320px;
-  border-bottom: 1px solid #E5E5E5;
-}
-
-.hero-form__text {
-  margin: 38px 18px 26px;
-}
-
-.hero-form__background {
-  height: 158px;
-  width: 320px;
-  background-size: cover;
-}
-
-.hero-form__vector {
-  padding: 57px 45.5px 62px;
-}
-
 .form__feedback-form {
   display: flex;
   flex-direction: column;
@@ -973,25 +971,6 @@
 
 .catalog {
   width: 320px;
-}
-
-.hero-catalog {
-  width: 320px;
-  border-bottom: 1px solid #E5E5E5;
-}
-
-.hero-catalog__text {
-  margin: 38px 18px 26px;
-}
-
-.hero-catalog__background {
-  height: 158px;
-  width: 320px;
-  background-size: cover;
-}
-
-.hero-catalog__vector {
-  padding: 57px 45.5px 62px;
 }
 
 .photos-catalog__list {
