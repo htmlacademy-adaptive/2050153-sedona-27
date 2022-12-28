@@ -1,0 +1,21 @@
+
+.map {
+  display: flex;
+  background-image: url(../img/map-marker.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 320px;
+  height: 350px;
+  position: relative;
+  overflow:hidden;
+}
+
+.map__image {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width: 320px;
+  height: 350px;
+  object-fit:cover;
+}

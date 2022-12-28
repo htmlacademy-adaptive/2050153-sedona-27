@@ -1,0 +1,42 @@
+@use "./mixins.scss";
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__description {
+  text-transform: uppercase;
+  margin-right: 12px;
+}
+
+.copyright__link {
+  @include mixins.reset-link;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 128px;
+  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.copyright__icon {
+}
+
+.copyright__link:hover {
+  color: #81B3D2;
+}
+
+.copyright__link:active {
+  color: #B3B3B3;
+}
+
+.copyright__link:focus-visible {
+  outline: 2px solid #2D3440;
+  background-color: #5496BD;
+}
+
+.copyright__link:invalid {
+  color: #E5E5E5;
+}

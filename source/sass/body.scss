@@ -1,0 +1,30 @@
+.body {
+  font-family: 'PT-sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.body__main-header,
+.body__form-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.body__main,
+.body__main-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.body__footer,
+.body__form-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}

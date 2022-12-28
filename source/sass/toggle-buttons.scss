@@ -1,0 +1,47 @@
+.toggle-buttons {
+  display: flex;
+  margin: 17px 0 17px auto;
+}
+
+.toggle-buttons__button {
+  display: none;
+}
+
+.toggle-buttons__button--current {
+  display: block;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: inherit;
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.toggle-buttons__button--open {
+  background-image: url(../img/icon-nav-menu-open.svg);
+  background-position: 0 0;
+}
+
+.toggle-buttons__button--close {
+  background-image: url(../img/icon-nav-menu-close.svg);
+}
+
+.toggle-buttons__button:hover {
+  opacity: 0.6;
+}
+
+.toggle-buttons__button:active {
+  opacity: 0.3;
+}
+
+.toggle-buttons__button:focus-visible {
+  border: none;
+  outline: 2px solid rgb(181, 181, 181);
+  outline-offset: 2px;
+  background-color: transparent;
+}
+
+.toggle-buttons__button:invalid {
+  opacity: 0.1;
+}

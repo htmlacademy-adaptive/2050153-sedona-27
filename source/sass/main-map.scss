@@ -1,0 +1,17 @@
+@use "./mixins.scss";
+
+.main-map {
+  display: flex;
+}
+
+.main-map__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+}
+
+.main-map__link {
+  @include mixins.reset-link;
+  display: flex;
+  width: 320px;
+}
