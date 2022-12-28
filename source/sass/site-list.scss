@@ -1,12 +1,12 @@
 @use "./mixins.scss";
 
-.site__list {
+.site-list {
   @include mixins.reset-list;
+  display: none;
 }
 
 .site-list__item {
-  display: none;
-  // display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 55px;
