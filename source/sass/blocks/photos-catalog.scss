@@ -1,12 +1,8 @@
 @use "./mixins.scss";
 
-.photos-catalog {
+.photos-catalog {}
 
-}
-
-.photos-catalog__wrapper {
-
-}
+.photos-catalog__wrapper {}
 
 .photos-catalog__list {
   @include mixins.reset-list;
@@ -19,7 +15,6 @@
   border-bottom: 1px solid #E5E5E5;
   display: flex;
   flex-direction: column;
-
 }
 
 .photos-catalog__title {
