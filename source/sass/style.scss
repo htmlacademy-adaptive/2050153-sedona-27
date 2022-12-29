@@ -1,9 +1,10 @@
-@use "./page.scss";
-@use "./fonts.scss";
-@use "./body.scss";
-@use "./visually-hidden.scss";
-@use "./button.scss";
-@use "./mixins.scss";
+@use "./global/fonts.scss";
+@use "./global/visually-hidden.scss";
+@use "./global/variables.scss";
+@use "./global/button.scss";
+@use "./global/mixins.scss";
+@use "./blocks/page.scss";
+@use "./blocks/body.scss";
 @use "./blocks/header.scss";
 @use "./blocks/logo.scss";
 @use "./blocks/toggle-buttons.scss";
@@ -30,4 +31,3 @@
 @use "./blocks/catalog.scss";
 @use "./blocks/photos-catalog.scss";
 @use "./blocks/video-catalog.scss";
-
