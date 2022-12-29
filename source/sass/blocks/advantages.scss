@@ -1,4 +1,5 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .advantages {
   display: flex;
@@ -6,6 +7,11 @@
   align-items: center;
   justify-content: center;
   width: 320px;
+}
+
+.advantages__main-header {
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__wrapper {
@@ -91,9 +97,4 @@
   text-transform: uppercase;
   width: 284px;
   margin: 0;
-}
-
-.advantages__main-header {
-  display: flex;
-  flex-direction: column;
 }

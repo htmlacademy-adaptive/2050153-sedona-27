@@ -1,4 +1,5 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .photos-catalog {
   display: flex;
@@ -11,7 +12,15 @@
 .photos-catalog__main-header {
   display: flex;
   flex-direction: column;
-  margin: 38px 18px 26px;
+  border-bottom: 1px solid #E5E5E5;
+
+  @media (min-width: variables.$tablet-width) {
+   border: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    border: none;
+  }
 }
 
 .photos-catalog__wrapper {
