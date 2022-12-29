@@ -1,3 +1,5 @@
+@use "../global/variables.scss";
+
 .hero {
   display: flex;
 }
@@ -5,43 +7,95 @@
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-}
-
-.hero__wrapper--sedona {
-  border-bottom: 1px solid #E5E5E5;
-}
-
-.hero__background {
-  background-image: url(../img/hero-index-background.jpg);
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/hero-index-background.jpg), ;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   width: 320px;
   height: 389px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    height: 518px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    height: 518px;
+    margin: 0 auto;
+  }
+}
+
+.hero__wrapper--sedona {
+  height: 158px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 290px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 301px;
+  }
+}
+
+.hero__background {
+  background-image: url(../img/hero-devider-big.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  width: 320px;
+  display: flex;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .hero__background--sedona {
-  height: 158px;
+
 }
 
 .hero__vector {
-  padding: 70px 19px 105px;
-  background-image: url(../img/hero-divider.svg);
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  padding: 70px 0 105px;
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 460px;
+    height: 350px;
+    padding: 77px 0 91px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 460px;
+    height: 350px;
+    padding: 78px 0 90px;
+  }
 }
 
 .hero__vector--sedona {
-  padding: 57px 45.5px 62px;
-}
+  padding: 57px 0 62px;
+  margin: 0 auto;
 
-.hero__text {
-  display: flex;
-  flex-direction: column;
-}
+  @media (min-width: variables.$tablet-width) {
+    width: 457px;
+    height: 78px;
+    padding: 106px 0 105px;
+  }
 
-.hero__text--catalog,
-.hero__text--form {
-  margin: 38px 18px 26px;
+  @media (min-width: variables.$desktop-width) {
+    width: 457px;
+    height: 78px;
+    padding: 124px 0 98px;
+  }
 }

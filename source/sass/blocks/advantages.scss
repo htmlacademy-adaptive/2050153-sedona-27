@@ -2,11 +2,17 @@
 
 .advantages {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
 }
 
 .advantages__wrapper {
   display: flex;
-  max-width: 320px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages__list {
@@ -85,4 +91,9 @@
   text-transform: uppercase;
   width: 284px;
   margin: 0;
+}
+
+.advantages__main-header {
+  display: flex;
+  flex-direction: column;
 }
