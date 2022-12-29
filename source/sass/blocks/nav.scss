@@ -1,23 +1,40 @@
-@use "./mixins.scss";
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .nav {
-  min-width: 320px;
   min-height: 56px;
+  min-width: 320px;
   position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 1200px;
+  }
 }
 
 .nav__toggle {
+  display: block;
   margin-top: 17px;
   margin-right: 17px;
   position: absolute;
   top: 0;
   right: 0;
   left: auto;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
 }
 
 .nav__wrapper {
   display: flex;
-  max-width: 320px;
 }
 
 .nav__list {
@@ -26,8 +43,4 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 320p;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
