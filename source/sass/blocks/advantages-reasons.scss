@@ -1,6 +1,18 @@
 @use "../global/mixins.scss";
+@use "../global/variables.scss";
 
 .advantages-reasons {
+  display: grid;
+  box-sizing: border-box;
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
 }
 
 .advantages-reasons__list {
@@ -9,41 +21,76 @@
   grid-template-columns: 284px;
   row-gap: 25px;
   margin: 22px 18px;
+  box-sizing: border-box;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-template-columns: repeat(3, 256px);
+    gap: 0;
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: repeat(3, 400px);
+    gap: 0;
+    margin: 0;
+  }
 }
 
 .advantages-reasons__item {
   display: flex;
   box-sizing: border-box;
-  width: 284px;
   flex-direction: column;
   padding-left: 47px;
   align-items: flex-start;
   background-repeat: no-repeat;
   background-position: top 0 left 0;
+  background-size: 40px 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 330px;
+    background-position: top 60px center;
+    align-items: center;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 330px;
+    background-position: top 69px center;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .advantages-reasons__item--house {
   background-image: url(../img/advantages-icons/house.svg);
+
+  @media (min-width: variables.$tablet-width) {
+    background-size: 77px 72px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-size: 80px 73px;
+  }
 }
 
 .advantages-reasons__item--food {
   background-image: url(../img/advantages-icons/food.svg);
+  @media (min-width: variables.$tablet-width) {
+    background-size: 80px 68px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-size: 73px 69px;
+  }
 }
 
 .advantages-reasons__item--present {
   background-image: url(../img/advantages-icons/present.svg);
-}
+  @media (min-width: variables.$tablet-width) {
+    background-size: 67px 75px;
+  }
 
-.advantages-reasons__title,
-.advantages-reasons__description {
-  text-align: left;
-  width: 237px;
-}
-
-.advantages-reasons__title {
-  padding-top: 8px;
-}
-
-.advantages-reasons__description {
-
+  @media (min-width: variables.$desktop-width) {
+    background-size: 78px 75px;
+  }
 }
