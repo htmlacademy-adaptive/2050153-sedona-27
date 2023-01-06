@@ -8,6 +8,20 @@
   top: 0;
   left: 0;
   display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    width: 768px;
+    position: relative;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    width: 1200px;
+    position: relative;
+    padding: 0;
+  }
 }
 
 .site-list__item {
@@ -20,6 +34,34 @@
   color: #FFFFFF;
   margin: 0;
   z-index: 2;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #FFFFFF;
+    color: #000000;
+    z-index: 0;
+    width: 153px;
+    min-height: 56px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: #FFFFFF;
+    color: #000000;
+    z-index: 0;
+    width: 240px;
+    min-height: 56px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.site-list__item--middle {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: auto;
+  }
 }
 
 .site-list__link {
@@ -50,68 +92,26 @@
   & :invalid {
     background-color: #E5E5E5;
   }
-}
 
-@media (min-width: variables.$tablet-width) {
-  .site-list {
-    display: flex;
-    width: 768px;
-    position: relative;
-    padding: 0;
-  }
-
-  .site-list__item  {
-    background-color: #FFFFFF;
-    color: #000000;
-    z-index: 0;
-    width: 153px;
-    min-height: 56px;
-  }
-
-  .site-list__item--middle {
-    margin-right: auto;
-  }
-
-  .site-list__link {
+  @media (min-width: variables.$tablet-width) {
     font-size: 14px;
     line-height: 21px;
     padding: 0;
   }
 
-  .site-list__link--current {
+  @media (min-width: variables.$desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: variables.$tablet-width) {
     color: #766357;
   }
-}
 
-@media (min-width: variables.$desktop-width) {
-  .site-list {
-    display: flex;
-    width: 1200px;
-    position: relative;
-    padding: 0;
-  }
-
-  .site-list__item  {
-    background-color: #FFFFFF;
-    color: #000000;
-    z-index: 0;
-    width: 240px;
-    min-height: 56px;
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .site-list__item--middle {
-    margin-right: auto;
-  }
-
-  .site-list__link {
-    font-size: 14px;
-    line-height: 21px;
-    padding: 0;
-  }
-
-  .site-list__link--current {
+  @media (min-width: variables.$desktop-width) {
     color: #766357;
   }
 }
