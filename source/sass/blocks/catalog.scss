@@ -1,0 +1,40 @@
+@use "../global/variables.scss";
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
+}
+
+.catalog__hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+}
+
+.catalog__photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+}
+
+.catalog__video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+}

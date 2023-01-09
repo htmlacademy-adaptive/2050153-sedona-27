@@ -1,4 +1,4 @@
-@use "./mixins.scss";
+@use "../global/mixins.scss";
 
 .footer-social {
   display: flex;
@@ -30,17 +30,11 @@
   background-color: #81B3D2;
 }
 
-.footer-social__button--vk {
+.footer-social__button--vk {}
 
-}
+.footer-social__button--telegram  {}
 
-.footer-social__button--telegram  {
-
-}
-
-.footer-social__button--youtube {
-
-}
+.footer-social__button--youtube {}
 
 .footer-social__icon {
   color: #FFFFFF;
@@ -66,4 +60,3 @@
 .footer-social__button:invalid {
   background-color: #E5E5E5;
 }
-

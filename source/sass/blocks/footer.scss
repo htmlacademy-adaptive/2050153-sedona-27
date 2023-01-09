@@ -1,0 +1,42 @@
+@use "../global/variables.scss";
+
+.footer {
+  display: flex;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    min-height: 120px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 76px 0 45px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    padding: 0 136px 0 104px;
+  }
+}
+
+.footer__hashtag {
+
+}
+
+.footer__social {
+
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}

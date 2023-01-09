@@ -1,0 +1,39 @@
+.body {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #E7E5E5;
+}
+
+.body__main-header,
+.body__form-header,
+.body__catalog-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+.body__main,
+.body__main-form,
+.body__main-catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+.body__footer,
+.body__form-footer,
+.body__catalog-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}

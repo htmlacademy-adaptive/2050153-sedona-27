@@ -1,0 +1,46 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.nav {
+  min-height: 56px;
+  min-width: 320px;
+  position: relative;
+
+  @media (min-width: variables.$tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    min-width: 1200px;
+  }
+}
+
+.nav__toggle {
+  display: block;
+  margin-top: 17px;
+  margin-right: 17px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+
+  @media (min-width: variables.$tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
+}
+
+.nav__wrapper {
+  display: flex;
+}
+
+.nav__list {
+  @include mixins.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

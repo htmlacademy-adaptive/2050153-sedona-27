@@ -1,0 +1,38 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.main-map {
+  display: flex;
+}
+
+.main-map__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin-bottom: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    margin: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    margin: 0;
+  }
+}
+
+.main-map__link {
+  @include mixins.reset-link;
+  display: flex;
+  width: 320px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+  }
+}

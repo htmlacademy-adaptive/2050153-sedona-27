@@ -1,0 +1,41 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+$margin-logo: 160px - 93px;
+$margin-logo-tablet: 384px - 93px;
+$margin-logo-desktop: 600px - 93px;
+
+.header {
+  min-height: 56px;
+  position: relative;
+}
+
+.header__logo {
+  @include mixins.reset-link;
+  box-sizing: border-box;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  margin: 0 $margin-logo;
+
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 $margin-logo-tablet;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 $margin-logo-desktop;
+  }
+}
+
+.header__nav {
+  display: flex;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

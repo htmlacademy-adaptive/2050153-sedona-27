@@ -1,0 +1,117 @@
+@use "../global/mixins.scss";
+@use "../global/variables.scss";
+
+.site-list {
+  @include mixins.reset-list;
+  width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    width: 768px;
+    position: relative;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    width: 1200px;
+    position: relative;
+    padding: 0;
+  }
+}
+
+.site-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 55px;
+  box-sizing: border-box;
+  background-color: #81B3D2;
+  color: #FFFFFF;
+  margin: 0;
+  z-index: 2;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #FFFFFF;
+    color: #000000;
+    z-index: 0;
+    width: 153px;
+    min-height: 56px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: #FFFFFF;
+    color: #000000;
+    z-index: 0;
+    width: 240px;
+    min-height: 56px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.site-list__item--middle {
+  @media (min-width: variables.$tablet-width) {
+    margin-right: auto;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.site-list__link {
+  @include mixins.reset-link;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 12px 81px;
+
+  & :hover {
+    background-color: #669EC0;
+  }
+
+  & :active {
+    background-color: #5496BD;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  & :focus-visible {
+    outline: 2px solid #2D3440;
+    background-color: #5496BD;
+  }
+
+  & :invalid {
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0;
+  }
+}
+
+.site-list__link--current {
+  @media (min-width: variables.$tablet-width) {
+    color: #766357;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    color: #766357;
+  }
+}
