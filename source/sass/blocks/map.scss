@@ -1,14 +1,12 @@
 
 .map {
-  display: flex;
-  justify-content: center;
-  background-image: url(../img/map-main.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:cover;
-  height: 350px;
+  display: block;
+  border: none;
+  // background-image: url(../img/map-main.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center center;
+  // background-size: cover;
   overflow: hidden;
-
 }
 
 .map__marker {
