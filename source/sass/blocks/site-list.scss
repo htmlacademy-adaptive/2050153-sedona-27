@@ -7,13 +7,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
 
   @media (min-width: variables.$tablet-width) {
     display: flex;
     width: 768px;
     position: relative;
     padding: 0;
+    flex-grow: 1;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -28,24 +28,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 320px;
   min-height: 55px;
   box-sizing: border-box;
   background-color: #81B3D2;
   color: #FFFFFF;
   margin: 0;
   z-index: 2;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+
+  & :hover {
+    background-color: #669EC0;
+  }
+
+  & :active {
+    background-color: #5496BD;
+    color: rgb(255, 255, 255, 0.3);
+  }
+
+  & :focus-visible {
+    outline: 2px solid #2D3440;
+    background-color: #5496BD;
+  }
+
+  & :invalid {
+    background-color: #E5E5E5;
+  }
 
   @media (min-width: variables.$tablet-width) {
     background-color: #FFFFFF;
     color: #000000;
+    box-shadow: none;
     z-index: 0;
     width: 153px;
     min-height: 56px;
+
+    & :hover {
+      background-color: #FFFFFF;
+      color: #81B3D2;
+    }
+
+    & :active {
+      background-color: #FFFFFF;
+      color: #000000;
+      opacity: 0.3;
+    }
+
+    & :focus-visible {
+      outline: transparent;
+      background-color: #FFFFFF;
+      color: #81B3D2;
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     background-color: #FFFFFF;
     color: #000000;
+    box-shadow: none;
     z-index: 0;
     width: 240px;
     min-height: 56px;
@@ -75,24 +114,6 @@
   line-height: 26px;
   padding: 12px 81px;
 
-  & :hover {
-    background-color: #669EC0;
-  }
-
-  & :active {
-    background-color: #5496BD;
-    color: rgb(255, 255, 255, 0.3);
-  }
-
-  & :focus-visible {
-    outline: 2px solid #2D3440;
-    background-color: #5496BD;
-  }
-
-  & :invalid {
-    background-color: #E5E5E5;
-  }
-
   @media (min-width: variables.$tablet-width) {
     font-size: 14px;
     line-height: 21px;
@@ -106,9 +127,28 @@
   }
 }
 
-.site-list__link--current {
+.site-list__item--current {
+  cursor: default;
+
+  & :hover,
+  & :active,
+  & :focus-visible {
+    background-color: #81B3D2;
+    color: #FFFFFF;
+    outline: transparent;
+  }
+
   @media (min-width: variables.$tablet-width) {
     color: #766357;
+    cursor: default;
+
+    & :hover,
+    & :active,
+    & :focus-visible {
+      background-color: #FFFFFF;
+      color: #766357;
+      outline: transparent;
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
