@@ -61,7 +61,7 @@
       </div>
       <form class="feedback-form__form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="feedback-form__wrapper">
-          <fieldset class="feedback-form__form-group form-group">
+          <fieldset class="feedback-form__form-group form-group form-group--full-name">
             <legend class="form-group__title">Представьтесь:</legend>
             <label class="form-group__label" for="first-name">Имя&#42;:</label>
             <input class="form-group__field" type="text" id="first-name" name="first-name" value="Пётр" required>
@@ -70,11 +70,11 @@
             <label class="form-group__label" for="patronymic-name">Отчество:</label>
             <input class="form-group__field" type="text" id="patronymic-name" name="patronymic-name" value="Викторович">
           </fieldset>
-          <fieldset class="feedback-form__form-group form-group">
+          <fieldset class="feedback-form__form-group form-group form-group--contact-info">
             <legend class="form-group__title">Контактная информация:</legend>
             <label class="form-group__label" for="phone-number">Контактный телефон&#42;:</label>
             <div class="form-group__container">
-              <input class="form-group__field form-group__field--contact-info" type="tel" id="phone-number"
+              <input class="form-group__field" type="tel" id="phone-number"
                 name="phone-number" placeholder="Введите телефон" required>
               <button class="form-group__button form-group__button--phone" type="button">
                 <span class="visually-hidden">Информация о контактном телефоне</span>
@@ -82,7 +82,7 @@
             </div>
             <label class="form-group__label" for="email">Электронная почта&#42;:</label>
             <div class="form-group__container">
-              <input class="form-group__field form-group__field--contact-info" type="email" id="email" name="email"
+              <input class="form-group__field" type="email" id="email" name="email"
                 placeholder="Введите e-mail" required>
               <button class="form-group__button form-group__button--email" type="button">
                 <span class="visually-hidden">Информация об электронной почте</span>
@@ -90,7 +90,7 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="feedback-form__form-group feedback-form__form-group--radio-form form-group">
+        <fieldset class="feedback-form__form-group form-group form-group--radio-form">
           <legend class="form-group__title">Ваше общее впечатление:</legend>
           <label class="form-group__control control">
             <input class="visually-hidden control__input" type="radio" name="feedback-group"
@@ -108,7 +108,7 @@
             <span class="control__label control__label--mark-radio">Затрудняюсь ответить</span>
           </label>
         </fieldset>
-        <fieldset class="feedback-form__form-group feedback-form__form-group--checkbox-form form-group">
+        <fieldset class="feedback-form__form-group form-group form-group--checkbox-form">
           <legend class="form-group__title">Посещенные достопримечательности:</legend>
           <label class="form-group__control control">
             <input class="visually-hidden control__input" type="checkbox" name="scenery-group" value="Мост Дьявола"
@@ -130,12 +130,12 @@
             <span class="control__label control__label--mark-checkbox">Красные скалы</span>
           </label>
         </fieldset>
-        <fieldset class="feedback-form__form-group feedback-form__form-group--free-form form-group">
+        <fieldset class="feedback-form__form-group form-group form-group--free-form">
           <legend class="form-group__title">Опишите свои эмоции:</legend>
-          <textarea class="form-group__field form-group__field--free-form" name="message"
+          <textarea class="form-group__field" name="message"
             placeholder="Опишите подробно все свои восторги " rows=3></textarea>
         </fieldset>
-        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+        <button class="feedback-form__button form-group__button--sent-form button" type="submit">Отправить отзыв</button>
         <p class="feedback-form__information">&#42; - обязательные поля</p>
       </form>
     </section>
