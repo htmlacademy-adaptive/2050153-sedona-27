@@ -24,8 +24,6 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 1200px;
-    height: 518px;
-    margin: 0 auto;
   }
 }
 
@@ -42,12 +40,10 @@
 }
 
 .hero__background {
-  background-image: url(../img/hero-devider-big.svg);
+  background-image: url(../img/hero-big-devider.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: cover;
   width: 320px;
-  display: flex;
 
   @media (min-width: variables.$tablet-width) {
     width: 768px;
@@ -56,12 +52,8 @@
 
   @media (min-width: variables.$desktop-width) {
     width: 1200px;
-    margin: 0 auto;
+    margin-bottom: -1px;
   }
-}
-
-.hero__background--sedona {
-
 }
 
 .hero__vector {
