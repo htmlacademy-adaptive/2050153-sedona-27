@@ -10,8 +10,8 @@
 
 <body class="page__body body">
   <header class="body__form-header header">
-    <a class="header__logo logo">
-      <img class="logo__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+    <a class="header__logo" href="index.html">
+      <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
     <nav class="header__nav nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
@@ -193,6 +193,22 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="modal__container modal__container--error">
+      <section class="modal__content">
+        <h2 class="modal__title">Что-то пошло не&nbsp;так!</h2>
+        <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли&nbsp;их заполнить</p>
+        <button class="modal__button button" type="button">ок</button>
+      </section>
+    </div>
+    <div class="modal__container modal__container--sent">
+      <section class="modal__content">
+        <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+        <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем&nbsp;его на сайте.</p>
+        <button class="modal__button button" type="button">Закрыть окно</button>
+      </section>
+    </div>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 
