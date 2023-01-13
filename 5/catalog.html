@@ -11,10 +11,10 @@
 
 <body class="page__body body">
   <header class="body__catalog-header header">
-    <a class="header__logo logo">
-      <img class="logo__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+    <a class="header__logo" href="index.html">
+      <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="header__nav nav nav--opened nav--nojs">
+    <nav class="header__nav nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Кнопка меню</span>
       </button>
@@ -57,7 +57,8 @@
     <section class="catalog__photos photos-catalog">
       <div class="photos-catalog__main-header main-header">
         <h2 class="main-header__title main-header__title--catalog">Фото Седоны</h2>
-        <p class="main-header__description main-header__description--catalog">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут&nbsp;вам забыть
+        <p class="main-header__description main-header__description--catalog">Не можете решиться на путешествие из-за
+          курса? Фотографии&nbsp;помогут&nbsp;вам забыть
           о политике и экономике.</p>
       </div>
       <div class="photos-catalog__wrapper">
@@ -67,28 +68,52 @@
             <img class="photos-catalog__image" src="img/photo-road.jpg" width="1200" height="400"
               alt="Фотография Народные просторы.">
             <p class="photos-catalog__author">Автор фото: Борис</p>
-            <span class="photos-catalog__likes">1350</span>
+            <div class="photos-catalog__likes">
+              <svg class="photos-catalog__likes--icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <span class="photos-catalog__likes--number">1350</span>
+            </div>
           </li>
           <li class="photos-catalog__item photos-catalog__item--native-vegetation">
             <h3 class="photos-catalog__title">Местная растительность</h3>
             <img class="photos-catalog__image" src="img/photo-native-vegetation.jpg" width="400" height="267"
               alt="Фотография местной растительности.">
             <p class="photos-catalog__author">Автор фото: Сергей</p>
-            <span class="photos-catalog__likes">143</span>
+            <div class="photos-catalog__likes">
+              <svg class="photos-catalog__likes--icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <span class="photos-catalog__likes--number">143</span>
+            </div>
           </li>
           <li class="photos-catalog__item photos-catalog__item--mountain-road">
             <h3 class="photos-catalog__title">Дорога на север</h3>
             <img class="photos-catalog__image" src="img/photo-mountain-road.jpg" width="400" height="267"
               alt="Фотография горной дороги на север.">
             <p class="photos-catalog__author">Автор фото: Петр</p>
-            <span class="photos-catalog__likes">96</span>
+            <div class="photos-catalog__likes">
+              <svg class="photos-catalog__likes--icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <span class="photos-catalog__likes--number">96</span>
+            </div>
           </li>
           <li class="photos-catalog__item photos-catalog__item--mountains">
             <h3 class="photos-catalog__title">Мост дьявола</h3>
             <img class="photos-catalog__image" src="img/photo-mountains.jpg" width="400" height="267"
               alt="Фотография горы Мост Дьявола.">
             <p class="photos-catalog__author">Автор фото: Антон</p>
-            <span class="photos-catalog__likes">254</span>
+            <div class="photos-catalog__likes">
+              <svg class="photos-catalog__likes--icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+              </svg>
+              <span class="photos-catalog__likes--number">254</span>
+            </div>
           </li>
         </ul>
       </div>
