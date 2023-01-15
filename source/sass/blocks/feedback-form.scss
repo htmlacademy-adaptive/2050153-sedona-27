@@ -64,6 +64,17 @@
   width: 280px;
   min-height: 58px;
   margin: 17px 20px 0;
+
+  &--sent-form {
+    @media (min-width: variables.$tablet-width) {
+      width: 324px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      width: 384px;
+      margin-left: 96px;
+    }
+  }
 }
 
 .feedback-form__information {

@@ -90,21 +90,6 @@
   }
 }
 
-.advantages__title--with-number {
-  margin-top: 24px;
-  margin-bottom: 20px;
-
-  @media (min-width: variables.$tablet-width) {
-    margin-top: 52px;
-    width: 190px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    margin-top: 63px;
-    width: 300px;
-  }
-}
-
 .advantages__number {
   text-align: center;
   text-transform: uppercase;
@@ -157,18 +142,6 @@
 
   @media (min-width: variables.$tablet-width) {
     text-align: center;
-    width: 190px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 300px;
-  }
-}
-
-.advantages__description--with-number {
-  margin-bottom: 24px;
-
-  @media (min-width: variables.$tablet-width) {
     width: 190px;
   }
 

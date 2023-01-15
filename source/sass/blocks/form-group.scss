@@ -284,17 +284,6 @@
   cursor: pointer;
 }
 
-.form-group__button--sent-form {
-  @media (min-width: variables.$tablet-width) {
-    width: 324px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    width: 384px;
-    margin-left: 96px;
-  }
-}
-
 .form-group__button--phone {
   background-image: url(../img/phone-icon.svg);
 }
