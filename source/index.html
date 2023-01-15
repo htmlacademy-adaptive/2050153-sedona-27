@@ -10,23 +10,17 @@
 
 <body class="page__body body">
   <header class="body__main-header header">
-    <a class="header__logo logo">
-      <img class="logo__logo-image" src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
+    <a class="header__logo" href="index.html">
+      <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
-    <nav class="header__nav nav">
-      <div class="nav__toggle toggle-buttons">
-        <button class="toggle-buttons__button toggle-buttons__button--open toggle-buttons__button--current"
-          type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <button class="toggle-buttons__button toggle-buttons__button--close" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-      </div>
+    <nav class="header__nav nav nav--closed nav--nojs">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Кнопка меню</span>
+      </button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link site-list__link--current">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link">
               Главная
             </a>
           </li>
@@ -114,19 +108,20 @@
           <li class="advantages__item advantages-with-numbers">
             <ul class="advantages-with-numbers__list">
               <li class="advantages-with-numbers__item advantages-with-numbers__item--area">
-                <h3 class="advantages__title--with-number">Небольшая площадь</h3>
+                <h3 class="advantages-with-numbers__title">Небольшая площадь</h3>
                 <span class="advantages__number">&mdash; №3 &mdash;</span>
-                <p class="advantages__description--with-number">Все интересные места находятся очень&nbsp;близко</p>
+                <p class="advantages-with-numbers__description">Все интересные места находятся очень&nbsp;близко</p>
               </li>
               <li class="advantages-with-numbers__item advantages-with-numbers__item--road">
-                <h3 class="advantages__title--with-number">Красивая дорога</h3>
+                <h3 class="advantages-with-numbers__title">Красивая дорога</h3>
                 <span class="advantages__number">&mdash; №4 &mdash;</span>
-                <p class="advantages__description--with-number">Ехать в Седону из Лас-Вегаса совсем&nbsp;не&nbsp;скучно!</p>
+                <p class="advantages-with-numbers__description">Ехать в Седону из Лас-Вегаса совсем<br>не&nbsp;скучно!
+                </p>
               </li>
               <li class="advantages-with-numbers__item advantages-with-numbers__item--quite">
-                <h3 class="advantages__title--with-number">Мало туристов</h3>
+                <h3 class="advantages-with-numbers__title">Мало туристов</h3>
                 <span class="advantages__number">&mdash; №5 &mdash;</span>
-                <p class="advantages__description--with-number">Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
+                <p class="advantages-with-numbers__description">Большинство едет в Гранд Каньон и&nbsp;толпится там</p>
               </li>
             </ul>
           </li>
@@ -145,12 +140,11 @@
     <section class="main__main-map main-map">
       <h2 class="visually-hidden">Карта, где мы расположенны</h2>
       <div class="main-map__wrapper">
-        <a class="main-map__link map" href="#">
-          <span class="visually-hidden">Здесь вы можете посмотреть расположение на карте</span>
-          <svg class="map__marker" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.5 27a13.5 13.5 0 1 0 0-27 13.5 13.5 0 0 0 0 27Z" fill="#fff" />
-            <path d="M13.5 21.9a8.4 8.4 0 1 0 0-16.8 8.4 8.4 0 0 0 0 16.8Z" fill="#81B3D3" /></svg>
-        </a>
+        <iframe class="main-map__link map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52384.81852824811!2d-111.84148702177733!3d34.85494186430794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sau!4v1673442726506!5m2!1sen!2sau"
+          width="1200" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
   </main>
@@ -207,6 +201,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

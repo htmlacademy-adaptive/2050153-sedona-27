@@ -1,0 +1,129 @@
+@use "../global/variables.scss";
+@use "../global/button.scss";
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.modal__container {
+  position: relative;
+  margin: 10% auto auto;
+  padding: 41px 35px 42px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  z-index: 20;
+  width: 320px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.modal__container--error {
+  display: none;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 400px;
+  }
+}
+
+.modal__container--sent {
+  display: none;
+  position: relative;
+  padding-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 640px;
+    padding: 44px 91px;
+  }
+}
+
+.modal__container--sent::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 98px;
+  bottom: 0;
+  left: 0;
+  background-color: #F2F2F2;
+  z-index: -1;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 640px;
+    height: 146px;
+  }
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.modal__title {
+  margin: 0;
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 28px;
+  display: flex;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 307px;
+  }
+}
+
+.modal__container--sent .modal__title {
+  @media (min-width: variables.$tablet-width) {
+    width: 444px;
+  }
+}
+
+.modal__text {
+  margin: 0;
+  display: flex;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 28px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 307px;
+    margin-bottom: 38px;
+  }
+}
+
+.modal__container--sent .modal__text {
+  margin-bottom: 50px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 444px;
+    margin-bottom: 80px;
+  }
+}
+
+.modal__button {
+  width: 180px;
+  height: 58px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 272px;
+  }
+}
+
+.modal__container--sent .modal__button {
+  width: 280px;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 458px;
+  }
+}

@@ -1,18 +1,15 @@
 
 .map {
-  display: flex;
-  justify-content: center;
-  background-image: url(../img/map-main.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size:cover;
-  height: 350px;
+  display: block;
+  border: none;
   overflow: hidden;
-
+  position: relative;
 }
 
-.map__marker {
-  display: flex;
-  align-self: center;
-  justify-content: center;
+.map::before {
+  content: url(../img/map-marker);
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  z-index: 10;
 }
