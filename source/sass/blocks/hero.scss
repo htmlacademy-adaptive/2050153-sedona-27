@@ -9,33 +9,62 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/hero-index-background.jpg), ;
+  background-image: url(../img/hero-index-background-phone.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   width: 320px;
   height: 389px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hero-index-background-phone-2x.jpg);
+  }
+
   @media (min-width: variables.$tablet-width) {
     width: 768px;
     height: 518px;
     margin: 0 auto;
+    background-image: url(../img/hero-index-background-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hero-index-background-tablet-2x.jpg);
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     width: 1200px;
+    background-image: url(../img/hero-index-background-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hero-index-background-desktop-2x.jpg);
+    }
   }
 }
 
 .hero__wrapper--sedona {
   height: 158px;
+  background-image: url(../img/hero-form-catalog-background-phone.jpg);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/hero-form-catalog-background-phone-2x.jpg);
+  }
 
   @media (min-width: variables.$tablet-width) {
     height: 290px;
+    background-image: url(../img/hero-form-catalog-background-tablet.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hero-form-catalog-background-tablet-2x.jpg);
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     height: 301px;
+    background-image: url(../img/hero-form-catalog-background-desktop.jpg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/hero-form-catalog-background-desktop-2x.jpg);
+    }
   }
 }
 
