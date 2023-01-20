@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body body">
@@ -64,13 +68,18 @@
         <ul class="photos-catalog__list">
           <li class="photos-catalog__item photos-catalog__item--road">
             <h3 class="photos-catalog__title">неродные просторы</h3>
-            <img class="photos-catalog__image" src="img/photo-road.jpg" width="1200" height="400"
-              alt="Фотография Народные просторы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-road-desktop.jpg 1x, img/photo-catalog-road-desktop-2x 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-catalog-road-tablet.jpg 1x, img/photo-catalog-road-tablet-2x 2x">
+              <img class="photos-catalog__image" src="img/photo-catalog-road-phone.jpg" srcset="img/photo-catalog-road-phone-2x.jpg 2x"  width="280" height="280"
+                alt="Фотография Народные просторы.">
+            </picture>
             <p class="photos-catalog__author">Автор фото: Борис</p>
             <div class="photos-catalog__likes">
               <svg class="photos-catalog__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
               </svg>
               <span class="photos-catalog__number">1350</span>
             </div>
@@ -83,7 +92,8 @@
             <div class="photos-catalog__likes">
               <svg class="photos-catalog__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
               </svg>
               <span class="photos-catalog__number">143</span>
             </div>
@@ -96,7 +106,8 @@
             <div class="photos-catalog__likes">
               <svg class="photos-catalog__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
               </svg>
               <span class="photos-catalog__number">96</span>
             </div>
@@ -109,7 +120,8 @@
             <div class="photos-catalog__likes">
               <svg class="photos-catalog__icon" width="23" height="21" viewBox="0 0 23 21" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
-                <path d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
+                <path
+                  d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" />
               </svg>
               <span class="photos-catalog__number">254</span>
             </div>
